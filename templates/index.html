@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Farmora Chatbot</title>
+    <style type="text/tailwindcss">
+
+      @font-face {
+        font-family: 'poppins';
+        src: url(poppins.regular.ttf);
+      }
+
+      @theme {
+        --color-nudeGray: #f6f6f6;
+        --font-poppins: 'poppins';
+        --shadow-greenFade: 10px 0px 100px 20px rgba(0, 191, 65, 0.25);
+      }
+    </style>
+</head>
+<body class="bg-nudeGray min-h-screen relative">
+
+    <nav class="sticky top-0 w-[calc(100%-2rem)]
+    bg-[linear-gradient(128deg,rgba(0,191,65,1)_0%,rgba(13,250,0,1)_24%,rgba(239,239,239,1)_49%,rgba(13,250,0,1)_76%,rgba(0,191,65,1)_100%)]
+    p-[1.5rem] rounded-[1.5rem] m-[1rem]
+    ">
+        <h1 class="text-white font-poppins text-[2rem]">Farmora</h1>
+    </nav>
+
+    <div class="grid">
+
+    </div>
+
+    <div class="absolute bottom-0 w-full">
+      <form action="">
+        <div class="p-[2px] rounded-[1.5rem] focus-within:bg-[linear-gradient(90deg,rgba(0,191,65,1)_0%,rgba(237,136,2,1)_100%)] shadow-greenFade m-4">
+
+          <input type="text" placeholder="Ask your farming question"
+              class="
+                w-full min-h-[5rem] rounded-[calc(1.5rem-2px)]
+                  px-8 outline-none border-none
+                  bg-nudeGray
+              "
+          >
+
+      </div>
+      </form>
+    </div>
+
+
+
+</body>
+</html>
